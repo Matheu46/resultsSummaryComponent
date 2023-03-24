@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+h1, h2, p, span {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+p, span {
+  font-size: 18px;
+}
+
+body{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 740px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 30px;
+  box-shadow: 5px 5px 35px rgba(152, 148, 159, 0.2);
+}
+
+
+.component {
+  padding: 45px 40px;
+}
+
+.result {
+  background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  font-weight: 700;
+}
+
+.result h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #CAC3FF;
+}
+
+.result h2 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.result span:last-child{
+  color: #8D80FF;
+}
+
+.result p {
+  color: #B9BCFE;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+
+.circle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #4D22C9 0%, #4635F3 100%);
+}
+
+.circle span:first-child {
+  font-size: 72px;
+}
+
+@media (max-width:650px)  {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .result{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .circle {
+    min-width: 150px;
+    min-height: 150px;
+  }
+}
+
+
+.stats h2 {
+  font-weight: 800;
+  color: #303445;
+}
+
+.stats ul{
+  margin: 30px 0;
+  width: 100%;
+}
+
+.stats li {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  font-weight: 700;
+}
+
+/* .stats li span:first-child{
+  display: flex;
+  gap: 10px;
+} */
+
+.stats li.red{
+  background: #FFF6F5;
+  color: #D65B60;
+}
+.stats li.yellow{
+  background: #FEFBF4;
+  color: #E7B751;
+}
+.stats li.green{
+  background: #F2FBFA;
+  color: #25A181;
+}
+.stats li.purple{
+  background: #F3F2FC;
+  color: #353897;
+}
+
+.stats li span:first-child img{
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+}
+
+.stats li span:last-child{
+  color: #303445;
+}
+
+.stats li span.gray100{
+  color: #98949F;
+}
+
+.stats button{
+  width: 100%;
+  height: 55px;
+  border-radius: 50px;
+  border: none;
+  background-color: #303B59;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.stats button:hover{
+  background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+}
